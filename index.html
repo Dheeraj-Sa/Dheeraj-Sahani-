@@ -1,73 +1,272 @@
-!DOCTYPE html>
-<html lang="hi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Waste Segregator | My Portfolio</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
-        body { background-color: #f0f4f1; color: #333; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #1b5e20, #4caf50); color: white; text-align: center; padding: 60px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        header p { font-size: 1.2rem; opacity: 0.9; }
-        .container { max-width: 900px; margin: -40px auto 40px; padding: 0 20px; }
-        .card { background: white; border-radius: 15px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        h2 { color: #1b5e20; border-bottom: 3px solid #81c784; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.6rem; }
-        .profile-section { display: flex; align-items: center; gap: 30px; flex-wrap: wrap; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 5px solid #81c784; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .profile-text { flex: 1; min-width: 250px; }
-        .badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-bottom: 10px; }
-        .component-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
-        .component-item { background: #f9f9f9; padding: 12px; border-left: 4px solid #4caf50; border-radius: 4px; font-weight: 500; }
-        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; border-top: 1px solid #ddd; margin-top: 40px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Official website of Dheeraj Sahani, Young Innovator from Gorakhpur, creator of Smart Wet and Dry Waste Segregator.">
+<meta name="keywords" content="Dheeraj Sahani, Smart Waste Segregator, Young Innovator, Gorakhpur, Arduino">
+<meta name="author" content="Dheeraj Sahani">
+
+<title>Dheeraj Sahani | Young Innovator</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <header>
-        <h1>Smart Wet & Dry Waste Segregator</h1>
-        <p>An Innovative IoT Science Project for Cleaner India</p>
-    </header>
+<header>
 
-    <div class="container">
-        
-        <!-- About Me / Profile Section -->
-        <div class="card">
-            <h2>About Me (मेरे बारे में)</h2>
-            <div class="profile-section">
-                <!-- यहाँ अपनी फोटो का नाम बदलें -->
-                <img src="my-photo.jpg" alt="My Profile Picture" class="profile-img">
-                <div class="profile-text">
-                    <span class="badge">📍 Gorakhpur, Uttar Pradesh</span>
-                    <p>नमस्ते! मैं गोरखपुर का रहने वाला हूँ। मुझे नई टेक्नोलॉजी, इलेक्ट्रॉनिक्स और समाज के लिए उपयोगी प्रोजेक्ट्स बनाने का बहुत शौक है। यह वेबसाइट मेरे द्वारा बनाए गए ऑटोमैटिक कचरा प्रबंधन प्रोजेक्ट को प्रदर्शित करती है।</p>
-                </div>
-            </div>
-        </div>
+<nav class="navbar">
 
-        <!-- Project Details Section -->
-        <div class="card">
-            <h2>प्रोजेक्ट कैसे काम करता है?</h2>
-            <p>यह एक <strong>Smart Waste Segregator</strong> प्रोजेक्ट है जो गीले और सूखे कचरे को अलग-अलग करने की समस्या का आधुनिक समाधान है।</p>
-            <p style="margin-top: 10px;">जैसे ही कचरा लेने वाली गाड़ी गाना बजाते हुए आती है, लोग उसमें कचरा डालते हैं। गाड़ी में लगे एडवांस सेंसर तुरंत पहचान लेते हैं कि कचरा गीला है या सूखा, और फिर रोबोटिक मैकेनिज्म (Servo Motor) की मदद से उसे सही बॉक्स में डाल देते हैं।</p>
-        </div>
+<div class="logo">
+🌱 Dheeraj Sahani
+</div>
 
-        <!-- Components Section -->
-        <div class="card">
-            <h2>प्रोजेक्ट के मुख्य कंपोनेंट्स</h2>
-            <div class="component-list">
-                <div class="component-item">🤖 Arduino Uno</div>
-                <div class="component-item">💧 Moisture Sensor</div>
-                <div class="component-item">⚙️ Servo Motor</div>
-                <div class="component-item">🎵 Sound/Music Module</div>
-                <div class="component-item">🚗 Smart Vehicle Chassis</div>
-            </div>
-        </div>
+<ul>
 
-    </div>
+<li><a href="#home">Home</a></li>
 
-    <footer>
-        <p>© 2026 Designed with ❤️ by Me | Live from Gorakhpur</p>
-    </footer>
+<li><a href="#about">About</a></li>
+
+<li><a href="#mission">Mission</a></li>
+
+<li><a href="#project">Project</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>
+Hi, I'm <span>Dheeraj Sahani</span>
+</h1>
+
+<h2>
+Young Innovator | Class 9 Student
+</h2>
+
+<p>
+
+Student of <b>Sanskriti Srijan School</b>,
+Gorakhpur, Uttar Pradesh.
+
+Passionate about Science, Arduino,
+Electronics and Innovation.
+
+</p>
+
+<a href="#project" class="btn">
+Explore My Innovation
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="profile.jpg" alt="Dheeraj Sahani">
+
+</div>
+
+</section>
+
+</header>
+
+<section id="about" class="section">
+
+<h2>About Me</h2>
+
+<p>
+
+Hello!
+
+My name is <b>Dheeraj Sahani</b>.
+
+I am a Class 9 student of
+<b>Sanskriti Srijan School</b>,
+Gorakhpur, Uttar Pradesh.
+
+I love Science, Robotics,
+Arduino Programming,
+Electronics and Innovation.
+
+My dream is to become a Scientist
+and create technologies that help
+people and make India cleaner,
+smarter and environmentally friendly.
+
+</p>
+
+</section>
+
+<section id="mission" class="section">
+
+<h2>🌍 Mission Clean India</h2>
+
+<p>
+
+"Separate Waste Today,
+Build a Cleaner India Tomorrow."
+
+My mission is to inspire people
+to separate wet and dry waste.
+
+Proper waste segregation reduces
+pollution, improves recycling
+and protects nature.
+
+Every citizen can make India clean.
+
+</p>
+
+</section>
+<section id="project" class="section">
+
+<h2>♻️ My Innovation</h2>
+
+<div class="card">
+
+<h3>Smart Wet & Dry Waste Segregator</h3>
+
+<p>
+
+The Smart Wet & Dry Waste Segregator is an innovative waste management project created to encourage people to separate wet and dry waste.
+
+This system uses sensors to help classify waste and also supports a smart garbage collection vehicle equipped with a speaker that plays an announcement or awareness message during waste collection.
+
+The main purpose of this project is to increase public awareness about waste segregation, improve recycling, and contribute to a cleaner environment.
+
+</p>
+
+</div>
+
+<h2>Project Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>♻️ Waste Segregation</h3>
+<p>Helps separate wet and dry waste efficiently.</p>
+</div>
+
+<div class="feature">
+<h3>📡 Smart Sensors</h3>
+<p>Uses sensors for intelligent waste detection.</p>
+</div>
+
+<div class="feature">
+<h3>🔊 Speaker Alert</h3>
+<p>Garbage vehicle plays awareness announcements.</p>
+</div>
+
+<div class="feature">
+<h3>🌱 Eco Friendly</h3>
+<p>Supports a cleaner and greener India.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery" class="section">
+
+<h2>📸 Project Gallery</h2>
+
+<p>
+Upload your project photos below by replacing these images.
+</p>
+
+<div class="gallery">
+
+<img src="project1.jpg" alt="Project Image">
+
+<img src="project2.jpg" alt="Project Image">
+
+<img src="project3.jpg" alt="Project Image">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>🏆 Future Goals</h2>
+
+<p>
+
+✔ Become a Scientist
+
+<br>
+
+✔ Develop Smart Technologies
+
+<br>
+
+✔ Inspire Young Innovators
+
+<br>
+
+✔ Make India Cleaner through Innovation
+
+</p>
+
+</section>
+
+<section id="contact" class="section">
+
+<h2>📞 Contact</h2>
+
+<p>
+
+<b>Dheeraj Sahani</b>
+
+<br>
+
+Young Innovator
+
+<br>
+
+Class 9 Student
+
+<br>
+
+Sanskriti Srijan School
+
+<br>
+
+Gorakhpur, Uttar Pradesh, India
+
+</p>
+
+</section>
+
+<footer>
+
+<h2>Dheeraj Sahani</h2>
+
+<p>
+
+Young Innovator | Future Scientist
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
+
+</footer>
 
 </body>
+
 </html>
